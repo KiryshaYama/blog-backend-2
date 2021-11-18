@@ -32,7 +32,7 @@ Sensive Blog - Home
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
                   {% if popular_post.image_url %}
-                    <img class="card-img rounded-0" src="{{popular_post.image_url}}" alt="Картинка поста">
+                    <img class="card-img rounded-0" src="{{popular_post.image_url}}" alt="Картинка популярного поста">
                   {% else %}
                     <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Картинка поста">
                   {% endif %}
@@ -58,7 +58,7 @@ Sensive Blog - Home
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   {% if fresh_post.image_url %}
-                    <img class="img-fluid" src="{{fresh_post.image_url}}" alt="Картинка поста">
+                    <img class="img-fluid" src="{{fresh_post.image_url}}" alt="Картинка свежего поста">
                   {% else %}
                     <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Картинка поста">
                   {% endif %}
